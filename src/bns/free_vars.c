@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   free_vars.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaltinto <aaltinto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bakgun <bakgun@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 13:38:25 by aaltinto          #+#    #+#             */
-/*   Updated: 2024/08/13 13:38:28 by aaltinto         ###   ########.fr       */
+/*   Updated: 2024/11/17 18:48:55 by bakgun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,5 @@ int	close_windows(t_vars *vars, int close, int child)
 	mlx_destroy_window(vars->mlx.mlx, vars->mlx.win);
 	if (!close)
 		return (0);
-	system("leaks cub3d");
 	return (exit(0), 0);
 }
